@@ -28,6 +28,7 @@ ol {
   height: 2rem;
   border-radius: 50%;
   color: #222;
+  line-height: 2.5;
 }
 
 .red {
