@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 32px;
+  padding-left: 10%;
+  background-color: #ccc;
+  color: aliceblue; 
+  font-weight: 900;
+  color: rebeccapurple;
+}
+
+ol {
+  padding-top: 5rem;
+}
+
+.red, .green, .blue {
+  padding: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  color: #222;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
