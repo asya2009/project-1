@@ -32,7 +32,7 @@ body {
   font-size: 3.2rem;
   color: aliceblue;
   font-weight: 900;
-  background: linear-gradient(#66a3ff, #00bcd4, #66a3ff);
+  /* background: linear-gradient(#66a3ff, #00bcd4, #66a3ff); */
   font-family: Arial, sans-serif;
   display: grid;
   grid-template-columns: 1fr;
@@ -64,7 +64,7 @@ h1 {
 } */
 
 section {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 85%;
   display: flex;
   justify-content: center;
