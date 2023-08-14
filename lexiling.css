@@ -21,6 +21,13 @@ body {
   color: rebeccapurple;
 }
 
+header {
+  width: 100%;
+  height: max-content;
+  background-color: #222;
+  color: #fff;
+}
+
 ol {
   padding-top: 5rem;
 }
