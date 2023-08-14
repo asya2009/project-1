@@ -1,0 +1,99 @@
+/*** ROOT ***/
+:root {
+  font-size: 62.5%;
+  --h1: 3.2rem;
+  --h2: 2.4rem;
+  --h3: 1.8rem;
+  --h4: 1.6rem;
+  --h5: 1.4rem;
+  --h6: 1.2rem;
+  --border: dashed .2% red;
+  --padding: 0 1rem;
+  --black: #111;
+  --carrot: rgb(253, 81, 38);
+  --red: #f00;
+  --green: #0f0;
+  --blue: #00f;
+  --chartreuse: rgb(127, 255, 0);
+  --gold: rgb(255, 215, 0);
+  --grey: rgb(128, 128, 128);
+  --dark-blue: #6EB5E1;
+  --dark-green: #183153;
+  --white: #FFFAFA;
+}
+
+/*** RESET ***/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  transition: all .35s;
+  scroll-behavior: smooth;
+}
+
+/*** HTML BODY ***/
+html,
+body {width: 100vw; min-height: 100vh;}
+body {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr; display: flex; justify-content: center;}
+
+/*** WRAPPER ***/
+#wrapper {
+  border: solid 5px #111;
+  width: 85vw;
+  min-height: 100vh;
+  position: absolute;
+}
+
+/*** HEADER // FOOTER ***/
+header {box-shadow: 0 0 .2rem #111; background: linear-gradient(var(--dark-blue), var(--dark-green))}
+header,
+footer {display: flex; align-items: center; height: 10%; width: 100%; color: var(--white);}
+footer {justify-content: space-around; background: linear-gradient(var(--dark-green), var(--dark-blue)), var(--dark-green);}
+
+/*** SECTION ***/
+section {width: 100%; min-height: 100vh; background-color: #ddd; border: solid 1px; padding: 1rem;}
+
+/*** IMAGE ***/
+img {/*width: 100%;*/ height: 100%;}
+
+/*** ANCHOR ***/
+a:hover {text-decoration: underline;}
+
+/*** FONT-AWESOME ***/
+i {
+  font-size: 4.8rem;
+  padding: var(--padding);
+}
+
+/*** DIE ARTIKEL ***/
+.red {color: var(--red);}
+/*** DER ARTIKEL ***/
+.green {color: var(--green);}
+/*** DAS ARTIKEL ***/
+.blue {color: var(--blue);}
+
+.red,
+.green,
+.blue {
+  line-height: 3;
+  text-shadow: 0 0 .1rem #111, .1rem .1rem .1rem #111;
+}
+
+/* nav ul li a {
+  display: block;
+  padding: var(--padding);
+  border: solid .2rem #999;
+  display: block;
+} */
+
+/*** MEDIA ***/
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+}

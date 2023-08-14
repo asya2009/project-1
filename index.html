@@ -1,22 +1,38 @@
-<!-- green = der, red = die, blue = das -->
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <title>Worte</title>
+    <title>Shop</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Angelina" />
-    <meta name="description" content="Worte | LexiLing" />
-    <link rel="stylesheet" href="./lexiling.css" />
+    <meta name="author" content="Eugen Beirit">
+    <meta name="description" content="Portfolio">
+    <link rel="stylesheet" href="./src/css/root/root.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/55b283991f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="wrapper">
       <!---- HEADER ---->
-      <header><h1>Lexiling</h1></header>
-      <!---- LIST ---->
-      <div class="list">
+      <header>
+        <img src="./assets/images/wikipedia.png" alt="Logo" />
+        
+      </header>
+      <!---- NAVIGATION ---->
+      <nav>
+        <ul>
+          <li><a href="#home">Startseite</a></li>
+          <li><a href="#about">Über</a></li>
+          <li><a href="#projects">Projekte</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+      <!---- SECTION ---->
+      <section>
+        <!-- 27.juli 2023 -->
         <ol>
-          <!-- 27.juli 2023 -->
           <li>
             Belüftung
             <span class="red">die</span>
@@ -469,8 +485,7 @@
           </li>
 
           <li>
-            Nutzen
-            <span class="green">der</span>
+            Nutze  <span class="green">der</span>
           </li>
 
           <li>
@@ -483,7 +498,7 @@
             <span class="red">die</span>
           </li>
 
-          <li>
+          <li>         
             Benehmen
             <span class="blue">das</span>
           </li>
@@ -874,7 +889,24 @@
           <li></li>
           <!--  -->
         </ol>
-      </div>
+      </section>
+      <!---- FOOTER ---->
+      <footer id="contact">
+        <div class="icon-box">
+          <a href="https://github.com/enbt0909" target="_blank">
+            <i class="fa-brands fa-github box bounce"></i>
+          </a>
+
+          <a href="mailto:eugenbeirit22@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+          <a href="tel:0123456789">
+            <i class="fa-solid fa-phone fa-shake"></i>
+          </a>
+        </div>
+        <p>&copy; Alle Rechte sind vorbehalten</p>
+      </footer>
     </div>
   </body>
 </html>
