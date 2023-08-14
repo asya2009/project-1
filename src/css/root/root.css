@@ -29,7 +29,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  list-style: none;
+  /* list-style: none; */
   box-sizing: border-box;
   transition: all 0.35s;
   scroll-behavior: smooth;
@@ -117,7 +117,6 @@ i {
 .green,
 .blue,
 li {
-  line-height: 3;
   /* text-shadow: 0 0 .1rem #111, .1rem .1rem .1rem #111; */
   background: none repeat scroll 0 0 #000000;
     color: #FFFFFF;
@@ -135,11 +134,8 @@ li {
 }
 
 ol {
-  font-size: 10vw;
-}
-
-ol li::marker {
-  color: #fff;
+  font-size: 7vw;
+  width: 50%;
 }
 
 /* nav ul li a {

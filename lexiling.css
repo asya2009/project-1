@@ -29,7 +29,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  font-size: 3.2rem;
+  font-size: 3.2vw;
   color: aliceblue;
   font-weight: 900;
   /* background: linear-gradient(#66a3ff, #00bcd4, #66a3ff); */
@@ -88,3 +88,9 @@ section {
 .blue {
   line-height: 3;
 }
+
+/* @media (max-width: 500px) {
+  section ol li {
+    font-size: 1vw;
+  }
+} */
