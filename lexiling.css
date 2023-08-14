@@ -19,7 +19,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  padding: .5rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,22 +56,35 @@ h1 {
 }
 
 /*** LIST ***/
-.list {
+/* .list {
   width: 90%;
-  /* border: solid 2px; */
+  border: solid 2px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+} */
+
+section {
+  border: 2px solid red;
+  width: 85%;
+  display: flex;
+  justify-content: center;
 }
 
-ol {padding: 5rem;}
-
 /*** DIE ARTIKEL ***/
-.red {background-color: var(--red);}
+.red {
+  background-color: var(--red);
+}
 /*** DER ARTIKEL ***/
-.green {background-color: var(--green);}
+.green {
+  background-color: var(--green);
+}
 /*** DAS ARTIKEL ***/
-.blue {background-color: var(--blue);}
+.blue {
+  background-color: var(--blue);
+}
 
 .red,
 .green,
-.blue {line-height: 3;}
+.blue {
+  line-height: 3;
+}

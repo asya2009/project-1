@@ -7,7 +7,7 @@
   --h4: 1.6rem;
   --h5: 1.4rem;
   --h6: 1.2rem;
-  --border: dashed .2% red;
+  /* --border: dashed .2% red; */
   --padding: 0 1rem;
   --black: #111;
   --carrot: rgb(253, 81, 38);
@@ -38,24 +38,28 @@
 /*** HTML BODY ***/
 html,
 body {width: 100vw; min-height: 100vh;}
-body {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr; display: flex; justify-content: center;}
+body {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr; display: flex; justify-content: center; background: var(--dark-green);}
 
 /*** WRAPPER ***/
 #wrapper {
-  border: solid 5px #111;
-  width: 85vw;
+  width: 100vw;
   min-height: 100vh;
   position: absolute;
 }
 
 /*** HEADER // FOOTER ***/
-header {box-shadow: 0 0 .2rem #111; background: linear-gradient(var(--dark-blue), var(--dark-green))}
+header {background: linear-gradient(var(--dark-blue), var(--dark-green));}
 header,
 footer {display: flex; align-items: center; height: 10%; width: 100%; color: var(--white);}
 footer {justify-content: space-around; background: linear-gradient(var(--dark-green), var(--dark-blue)), var(--dark-green);}
 
 /*** SECTION ***/
-section {width: 100%; min-height: 100vh; background-color: #ddd; border: solid 1px; padding: 1rem;}
+section {min-height: 100vh; background-color: #ddd; display: flex; justify-content: center; font-size: var(--h2);
+  background: hsl(190,50%,80%);
+  color:hsl(190,50%,80%);
+  text-shadow: 
+    -1px -1px 1px hsl(190,50%,90%), 
+    1px 1px 1px hsl(190,50%,50%);}
 
 /*** IMAGE ***/
 img {/*width: 100%;*/ height: 100%;}
@@ -80,13 +84,20 @@ i {
 .green,
 .blue {
   line-height: 3;
-  text-shadow: 0 0 .1rem #111, .1rem .1rem .1rem #111;
+  /* text-shadow: 0 0 .1rem #111, .1rem .1rem .1rem #111; */
+  color: hsl(15, 70%, 70%);
+  background: hsl(15, 60%, 82%);
+  text-shadow: 0 1px 0 hsl(15, 40%, 60%), 0 1px 0 hsl(15, 40%, 58%),
+    0 3px 0 hsl(15, 40%, 56%), 0 4px 0 hsl(15, 40%, 54%),
+    0 5px 0 hsl(15, 40%, 52%), 0 6px 1px hsl(15, 40%, 50%),
+    0 0 5px hsl(15, 20%, 60%), 0 1px 3px hsl(15, 20%, 58%),
+    0 3px 5px hsl(15, 20%, 56%), 0 5px 10px hsl(15, 20%, 54%),
+    0 10px 10px hsl(15, 20%, 52%), 0 15px 15px hsl(15, 20%, 50%);
 }
 
 /* nav ul li a {
   display: block;
   padding: var(--padding);
-  border: solid .2rem #999;
   display: block;
 } */
 
