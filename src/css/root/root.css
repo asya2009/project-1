@@ -81,17 +81,6 @@ section {
   justify-content: center;
   font-size: var(--h2);
     background: none repeat scroll 0 0 #000000;
-   /* color: #FFFFFF;
-    text-shadow:
-    0 0 10px #FFFFFF,
-    0 0 20px #FFFFFF,
-    0 0 30px #FFFFFF,
-    0 0 40px #FF00DE,
-    0 0 70px #FF00DE,
-    0 0 80px #FF00DE,
-    0 0 100px #FF00DE,
-    0 0 150px #FF00DE; */
-
 }
 
 /*** IMAGE ***/
@@ -133,8 +122,8 @@ li {
   background: none repeat scroll 0 0 #000000;
     color: #FFFFFF;
     text-shadow:
-    1px 1px 1px #111,
-    -1px -1px 1px #111,
+    1px 1px 1px #555,
+    -1px -1px 1px #777,
     0 0 10px #FFFFFF,
     0 0 20px #FFFFFF,
     0 0 30px #FFFFFF,
@@ -147,6 +136,10 @@ li {
 
 ol {
   font-size: 10vw;
+}
+
+ol li::marker {
+  color: #fff;
 }
 
 /* nav ul li a {
