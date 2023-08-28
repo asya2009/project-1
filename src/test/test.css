@@ -1,19 +1,13 @@
 *,
 ::before,
-::after {
-  box-sizing: border-box;
-}
+::after {margin: 0; box-sizing: border-box;}
+:root {font-size: 62.5%;}
 
-body {
-  margin: 0;
-  height: 100vh;
-  display: grid;
-  place-items: center;
-}
+body {width: 100%; height: 100%; display: grid;/* place-items: center; */background: url(//source.unsplash.com/333x1080?forrest); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;}
 
 button {
-  border-radius: 20px;
-  padding: 10px 20px;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -21,60 +15,61 @@ button {
 .card {
   height: max-content;
   width: 100%;
-  padding: 5rem;
-  perspective: 800px;
+  margin: 2.5rem auto;
+  /* padding: 2.5rem; */
+  perspective: 80rem;
   position: relative;
 }
 
 .front,
 .back {
-
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  /* height: 100%; */
-  height: 300px;
+  height: 100%;
+  /* height: 6rem; */
   /* width: 300px; */
   background-repeat: no-repeat;
   background-size: cover;
   transition: transform 2s;
   display: grid;
-  place-items: center;
-  font-size: 4rem;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
-
+  /* place-items: center; */
+  font-size: 5rem;
+  text-shadow: .1rem .1rem .1rem rgba(0, 0, 0, 0.7);
   /* transform-style: preserve-3d; */
   backface-visibility: hidden;
 }
 
-.front {
-  background: url(//source.unsplash.com/300x300?forrest);
-  background-repeat: no-repeat;
-  background-size: cover;
+/* .red {width: 100%;} */
+
+/* .front {
   background-position: center;
-}
+} */
 
 .back {
-  background: url(//source.unsplash.com/300x300?beach);
+  /* background: url(//source.unsplash.com/300x300?beach); */
   transform: rotateX(180deg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  /* background-position: center; */
 }
 
 /* on hover: move both cards: 180 deg */
 .card:hover>.front {
   transform: rotateY(180deg);
 }
-
 .card:hover>.back {
   transform: rotateX(360deg);
 }
 
 span {
-  display: inline-block;
-  padding: 0px 20px;
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0 2rem; */
   /* background: rgba(0,0,0, 0.5); */
-  color: white;
+  color: #111;
+  font-weight: 900;
+  text-shadow: 0 0 1rem #fafafa,
+  .1rem .1rem 1rem #fafafa, -.1rem -.1rem 1rem #fafafa, .1rem .1rem .2rem #fafafa, -.1rem -.1rem .1rem #fafafa;
 }
