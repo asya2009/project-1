@@ -44,4 +44,6 @@ body {
 .beirit {
   border: solid 1px #aaa;
   margin: 10px;
+  transform: rotate(180deg);
+  padding: 15px;
 }
