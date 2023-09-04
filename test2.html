@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Cards with Centered Snap</title>
+    <style>
+        *,
+        ::before,
+        ::after {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #main {
+          height: 100vh;
+          overflow-y: scroll;
+          scroll-snap-type: y mandatory;
+        }
+
+        .card {
+          font-size: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 5px solid red;
+          height: 100vh;
+          scroll-snap-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+      <div class="card">
+        <p>lorem ipsum dolor.</p>
+      </div>
+
+      <div class="card">
+        <p>lorem ipsum dolor.</p>
+      </div>
+
+      <div class="card">
+        <p>lorem ipsum dolor.</p>
+      </div>
+    </div>
+</body>
+</html>
