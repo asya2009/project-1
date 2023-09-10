@@ -16,16 +16,18 @@ body {
   background-attachment: fixed;
 }
 
-#main {height: 100vh; overflow-y: scroll; scroll-snap-type: y mandatory;}
+/* #main {height: 100vh;} */
 
 .card {
+  overflow-y: scroll; scroll-snap-type: y mandatory;
   /* font-size: 30px; */
   display: flex;
   justify-content: center;
   align-items: center;
   /* border-bottom: .2rem solid #ddd; */
   height: 100vh;
-  scroll-snap-align: center;
+  /* overflow-y: scroll; scroll-snap-type: y mandatory; */
+  /* scroll-snap-align: center; */
   position: relative;
 }
 
