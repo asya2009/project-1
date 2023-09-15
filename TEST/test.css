@@ -11,3 +11,11 @@
   background-color: red;
   scroll-snap-align: center;
 }
+
+.card:nth-child(1) {
+  background-color: blue ;
+}
+
+.card:nth-child(2) {
+  background-color: yellow ;
+}
