@@ -41,6 +41,7 @@ function displayQuestion() {
 
   question.answers.forEach((answer, index) => {
     let answerButton = document.createElement("button");
+    answerButton.classList.add('btn', 'btn-dark', 'me-4')
     answerButton.textContent = answer;
     answerButton.onclick = () => checkAnswer(index);
     answersDiv.appendChild(answerButton);
@@ -53,7 +54,7 @@ function checkAnswer(userAnswer) {
   if (userAnswer == correctAnswer) {
     score += 1;
   } else {
-    alert(`Deine Antwort war leider falsch`);
+    alert(`Die Antwort war leider falsch`);
   }
   nextQuestion();
 }

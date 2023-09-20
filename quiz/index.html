@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <title>Quiz</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="./app.js" defer></script>
-</head>
-<body>
-  <div id="quiz-container">
-    <h1 id="question"></h1>
-    <div id="answers"></div>
-    <button id="next-button" onclick="nextQuestion()">Nächste Frage</button>
-  </div>
-  <div id="result" hidden="true">
-    <h1>Quiz beendet</h1>
-    <p>Deine Punktzahl ist:<span id="score"></span></p>
-  </div>
+  <head>
+    <title>Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body
+    class="container d-flex justify-content-center align-item-center bg-dark"
+  >
+    <div id="quiz-container" class="card">
+      <div class="card-header">
+        <h1 id="question"></h1>
+      </div>
+      <div class="card-body">
+        <div id="answers"></div>
+      </div>
+      <div class="card-footer">
+        <button
+          id="next-button"
+          class="btn btn-primary"
+          onclick="nextQuestion()"
+        >
+          Nächste Frage
+        </button>
+      </div>
+    </div>
+    <div id="result" hidden="true" class="card">
+      <div class="card-header">
+        <h1>Quiz beendet</h1>
+      </div>
+      <div class="card-body">
+        <p>Deine Punktzahl ist:<span id="score"></span></p>
 
-</body>
+      </div>
+      <div class="card-footer">Wenn du noch mal spielen magst, sollst die Seite neu aktualisieren</div>
+      
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
