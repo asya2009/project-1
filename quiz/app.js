@@ -3,48 +3,50 @@ let currentQuestionIndex = 0;
 
 let questions = [
   {
-    question: 'Errate mal was ich heute essen mag',
-    answer: [ 'Blinis', 'Borsch', 'Nichts'],
-    corectAnswer: 2
+    question: "Угадай, что я могу съесть сегодня",
+    answers: ["Blinis", "Borsch", "Nichts"],
+    correctAnswer: 2,
   },
   {
-    question: 'Errate mal was ich heute machen mag',
-    answer: [ 'Coden', 'Lesen', 'Nichts'],
-    corectAnswer: 2
+    question: "Угадай, что я могу сделать сегодня",
+    answers: ["Coden", "Lesen", "Nichts"],
+    correctAnswer: 2,
   },
   {
-    question: 'Errate mal wen ich heute sehen mag',
-    answer: [ 'Dich', 'Angelina', 'Niemanden'],
-    corectAnswer: 2
+    question: "Угадай, кого я могу увидеть сегодня",
+    answers: ["Dich", "Angelina", "Niemanden"],
+    correctAnswer: 2,
   },
   {
-    question: 'Errate mal wieviel Gehirn ich heute besitze',
-    answer: [ '100%', '50%', '25%', '0'],
-    corectAnswer: 2
-  }
+    question: "Угадай, сколько у меня сегодня мозгов",
+    answers: ["100%", "50%", "25%", "0"],
+    correctAnswer: 2,
+  },
 ];
 
 function displayQuestion() {
   let question = questions[currentQuestionIndex];
 
-  document.getElementById('question').textContent = question.question;
+  document.getElementById("question").textContent = question.question;
 
-  let answersDiv = document.getElementById('answers');
+  let answersDiv = document.getElementById("answers");
 
   question.answers.forEach((answer, index) => {
-    let answerButton = document.createElement('button');
+    let answerButton = document.createElement("button");
     answerButton.textContent = answer;
-    
+    answerButton.oncklick = () => checkAnswer(index);
     answersDiv.appendChild(answerButton);
   });
 }
 displayQuestion();
 
 function checkAnswer(userAnswer) {
-  let corectAnswer = questions[currentQuestionIndex].corectAnswer;
-  if (userAnswer === corectAnswer) {
+  let correctAnswer = questions[currentQuestionIndex].correctAnswer;
+  if (userAnswer == correctAnswer) {
     score += 1;
+  } else {
+    return `Antwort ${correctAnswer} ist leider falsch`;
   }
   currentQuestionIndex += 1;
+  displayQuestion();
 }
-displayQuestion();
