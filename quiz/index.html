@@ -11,7 +11,12 @@
   <div id="quiz-container">
     <h1 id="question"></h1>
     <div id="answers"></div>
-    <button id="next-button">Nächste Frage</button>
+    <button id="next-button" onclick="nextQuestion()">Nächste Frage</button>
   </div>
+  <div id="result" hidden="true">
+    <h1>Quiz beendet</h1>
+    <p>Deine Punktzahl ist:<span id="score"></span></p>
+  </div>
+
 </body>
 </html>

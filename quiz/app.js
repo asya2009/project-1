@@ -25,16 +25,24 @@ let questions = [
 ];
 
 function displayQuestion() {
+  if (currentQuestionIndex >= questions.length) {
+    document.getElementById('quiz-container').hidden = true;
+    document.getElementById('result').hidden = false;
+    document.getElementById('score').textContent = score;
+    return;
+  }
+
   let question = questions[currentQuestionIndex];
 
   document.getElementById("question").textContent = question.question;
 
   let answersDiv = document.getElementById("answers");
+  answersDiv.innerHTML = '';
 
   question.answers.forEach((answer, index) => {
     let answerButton = document.createElement("button");
     answerButton.textContent = answer;
-    answerButton.oncklick = () => checkAnswer(index);
+    answerButton.onclick = () => checkAnswer(index);
     answersDiv.appendChild(answerButton);
   });
 }
@@ -45,8 +53,12 @@ function checkAnswer(userAnswer) {
   if (userAnswer == correctAnswer) {
     score += 1;
   } else {
-    return `Antwort ${correctAnswer} ist leider falsch`;
+    alert(`Deine Antwort war leider falsch`);
   }
+  nextQuestion();
+}
+
+function nextQuestion() {
   currentQuestionIndex += 1;
   displayQuestion();
 }
