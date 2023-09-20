@@ -1,4 +1,8 @@
-.galery {
+body {
+  height: 100vh;
+}
+
+/* .galery {
   width: 500px;
   height: 500px;
   overflow-y: scroll;
@@ -18,4 +22,11 @@
 
 .card:nth-child(2) {
   background-color: yellow ;
+} */
+
+/* NEXT */
+.box {
+  height: ´200px;
+  width: 200px;
+  background-color: #111;
 }
