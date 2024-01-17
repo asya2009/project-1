@@ -1,0 +1,16 @@
+- Hallo, Soffi !
+- Hi, Kery. Was geht ab ? 
+- Bei mir alles okay. Und bei dir ?
+- Auch gut.
+- Hey, Soffi ich habe ergendwie gedacht.
+- Was hast du genau gedacht ?
+- Am dritte Juni hab ich Geburtstag.
+- Oh, ich habe nicht einfach gewissen. Also, könnte ich kommen ?
+- Jaa, natürlich gerne.
+- Dann, klar. Wann beginnen wir ?
+- Um 18:30.
+- Okey, welche Geschenk möchtest du ?
+- Keine Ahnung. 
+- Nun gut, dann muss ich meine Kreativität benutzen.
+- Das ist gut, dann so.
+
